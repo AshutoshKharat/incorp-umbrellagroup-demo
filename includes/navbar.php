@@ -6,7 +6,7 @@
             <div class="logo-icon">
                 <span>X</span>
             </div>
-            <span class="logo-text">thinkbix</span>
+            <span class="logo-text">VIOTX UMBRELLA</span>
         </a>
 
         <!-- Right Controls: Theme Toggle + Hamburger -->
