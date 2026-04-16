@@ -17,26 +17,21 @@
 
                         <div class="col-lg-5 col-md-12 hero-content">
                             <div class="hero-badge mb-4">
-                                <span>India's most trusted IT solution partner.</span>
+                                <span>तत्परिवर्तनं भव | यतो धर्मस्ततो जयः |</span>
                             </div>
 
                             <h1 class="hero-heading mb-4">
-                                Transforming Ideas<br>
-                                into Digital Reality<br>
-                                with Expert IT<br>
-                                Solutions
+                                Greetings to <br>
+                                VIOTX UMBRELLA <br>
+                                HOLDING INCORPORATION
                             </h1>
 
                             <p class="hero-subtext mb-5">
-                                Elevate your business with our cutting-edge
-                                <strong>software development</strong>,
-                                <strong>mobile apps</strong>, and
-                                <strong>AI solutions</strong>
-                                tailored to your unique needs.
+                                Technology companies have become a dominant driver in recent years of economic growth, consumer tastes, and the financial markets. IT and technology have become the lifeblood of modern society. Their influence permeates nearly every aspect of our lives, from personal interactions to global economies. That's because technology has reshaped how people communicate, consume information, shop, socialize, and work.
                             </p>
 
                             <a href="contact.php" class="btn btn-start-project">
-                                Start Project &nbsp;&rarr;
+                                Get Started &nbsp;&rarr;
                             </a>
                         </div>
 

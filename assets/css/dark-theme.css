@@ -126,11 +126,21 @@
 body,
 .intelligent-section,
 .tech-stack-section,
+.about-company-section,
 .tech-solutions-section,
+.solutions-services-section,
+.faq-section,
 .ai-appointment-section,
 .testimonials-section,
 .site-footer,
 .service-icon-card,
+.about-company-story,
+.about-company-card,
+.solutions-service-card,
+.faq-accordion-item,
+.contact-us-panel,
+.contact-location-card,
+.contact-modal-content,
 .testimonial-card,
 .footer-social-icon,
 .faq-item,
@@ -177,6 +187,118 @@ body,
 
 [data-theme="dark"] .service-icon-label {
     color: #e2e8f0;
+}
+
+/* ============================================================
+   DARK THEME — ABOUT COMPANY
+   ============================================================ */
+[data-theme="dark"] .about-company-section {
+    background: #0f172a;
+}
+
+[data-theme="dark"] .about-company-story,
+[data-theme="dark"] .about-company-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .about-company-block-title {
+    color: #f8fafc;
+}
+
+[data-theme="dark"] .about-company-story p,
+[data-theme="dark"] .about-company-card p {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .about-highlight-chip {
+    background: #1e3a8a;
+    color: #dbeafe;
+}
+
+[data-theme="dark"] .about-values-list li {
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .about-values-list i {
+    background: #312e81;
+    color: #e0e7ff;
+}
+
+[data-theme="dark"] .about-company-card-accent {
+    background: linear-gradient(180deg, #1e293b 0%, #172033 100%);
+    border-color: #475569;
+}
+
+/* ============================================================
+   DARK THEME — SOLUTIONS & SERVICES
+   ============================================================ */
+[data-theme="dark"] .solutions-services-section {
+    background: #111827;
+}
+
+[data-theme="dark"] .solutions-service-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .solutions-service-card:hover {
+    border-color: #475569;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .solutions-service-title {
+    color: #f8fafc;
+}
+
+[data-theme="dark"] .solutions-service-list li {
+    color: #94a3b8;
+}
+
+/* ============================================================
+   DARK THEME — FAQ SECTION
+   ============================================================ */
+[data-theme="dark"] .faq-section {
+    background: #111827;
+}
+
+[data-theme="dark"] .faq-accordion-item {
+    border-color: #334155;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .faq-accordion-btn {
+    color: #e2e8f0;
+    background: #1e293b;
+}
+
+[data-theme="dark"] .faq-accordion-btn:not(.collapsed) {
+    color: #dbeafe;
+    background: #1e3a8a;
+}
+
+[data-theme="dark"] .faq-accordion-btn::after {
+    filter: invert(1) brightness(1.4);
+}
+
+[data-theme="dark"] .faq-accordion-body {
+    color: #94a3b8;
+    background: #1e293b;
+}
+
+[data-theme="dark"] .contact-us-panel,
+[data-theme="dark"] .contact-location-card {
+    background: rgba(15, 23, 42, 0.42);
+    border-color: rgba(148, 163, 184, 0.2);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.32);
+}
+
+[data-theme="dark"] .contact-us-icon,
+[data-theme="dark"] .contact-location-badge,
+[data-theme="dark"] .contact-map-frame-wrap {
+    background: rgba(30, 41, 59, 0.55);
 }
 
 /* ============================================================
@@ -238,6 +360,12 @@ body,
     border-top-color: #1e293b;
 }
 
+[data-theme="dark"] .footer-panel {
+    background: rgba(15, 23, 42, 0.52);
+    border-color: #1e293b;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+}
+
 [data-theme="dark"] .footer-logo-text {
     color: #f9fafb;
 }
@@ -255,20 +383,55 @@ body,
     color: #94a3b8;
 }
 
+[data-theme="dark"] .footer-nav-list a {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .footer-nav-list a:hover {
+    color: #f8fafc;
+}
+
+[data-theme="dark"] .footer-link-list a {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .footer-link-list a::before {
+    background: #334155;
+}
+
+[data-theme="dark"] .footer-link-list a:hover {
+    color: #f8fafc;
+}
+
+[data-theme="dark"] .footer-link-list a:hover::before {
+    background: #60a5fa;
+}
+
 [data-theme="dark"] .footer-services-list li {
     color: #94a3b8;
 }
 
-[data-theme="dark"] .faq-question {
+[data-theme="dark"] .footer-location-city {
+    color: #f8fafc;
+}
+
+[data-theme="dark"] .footer-location-item,
+[data-theme="dark"] .footer-contact-item {
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .footer-contact-icon {
+    background: #1e3a8a;
+    color: #dbeafe;
+}
+
+[data-theme="dark"] .footer-contact-label {
+    color: #64748b;
+}
+
+[data-theme="dark"] .footer-contact-link,
+[data-theme="dark"] .footer-contact-text {
     color: #e2e8f0;
-}
-
-[data-theme="dark"] .faq-item {
-    border-bottom-color: #1e293b;
-}
-
-[data-theme="dark"] .faq-answer p {
-    color: #94a3b8;
 }
 
 [data-theme="dark"] .footer-bottom {

@@ -4,7 +4,7 @@
         <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center gap-2" href="index.php">
             <div class="logo-icon">
-                <span>X</span>
+                <img src="assets/images/logo.jpg" alt="VIOTX UMBRELLA Logo" width="32" height="32">
             </div>
             <span class="logo-text">VIOTX UMBRELLA</span>
         </a>

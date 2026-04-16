@@ -1,107 +1,188 @@
 <footer class="site-footer">
     <div class="container-xl">
 
-        <div class="row g-5">
+        <?php
+        $aboutLinks = [
+            'About',
+            'Team',
+            'FAQ',
+            'Mission',
+            'Contact',
+            'Disclaimer',
+            'Cookies Policy',
+            'Terms & Condition',
+            'Common Fraudulent Cases',
+            'Climate Commitment',
+            'Verify Trusted Site',
+        ];
+
+        $solutionLinks = [
+            'Information Technology',
+            'WEB 3.0 VDA',
+            'Insurance',
+            'Cyber Security',
+            'Accounting | Taxation',
+            'Tourism',
+            'DPOS Validators',
+            'Agritech Info',
+            'FinTech Solutions',
+            'E-Governance',
+            'Services via Artificial Intelligence',
+        ];
+
+        $securityLinks = [
+            'Indian IT Act',
+            'Cyber Security in Digital Era',
+            'Online Frauds Prevention',
+            'Report Cyber Fraud',
+        ];
+
+        $communityLinks = [
+            ['icon' => 'bi-facebook', 'label' => 'Facebook'],
+            ['icon' => 'bi-instagram', 'label' => 'Instagram'],
+            ['icon' => 'bi-twitter-x', 'label' => 'Twitter'],
+            ['icon' => 'bi-linkedin', 'label' => 'LinkedIn Page'],
+            ['icon' => 'bi-youtube', 'label' => 'Youtube'],
+            ['icon' => 'bi-reddit', 'label' => 'Reddit'],
+            ['icon' => 'bi-telegram', 'label' => 'Telegram'],
+            ['icon' => 'bi-github', 'label' => 'Github'],
+            ['icon' => 'bi-twitch', 'label' => 'Twitch'],
+            ['icon' => 'bi-medium', 'label' => 'Medium'],
+            ['icon' => 'bi-discord', 'label' => 'Discord'],
+            ['icon' => 'bi-pinterest', 'label' => 'Pinterest'],
+            ['icon' => 'bi-quora', 'label' => 'Quora'],
+        ];
+        ?>
+
+        <div class="row g-4 align-items-start">
 
             <!-- Company Info -->
-            <div class="col-lg-3 col-md-6">
-                <a class="footer-brand d-flex align-items-center gap-2 mb-3 text-decoration-none" href="index.php">
-                    <div class="logo-icon">X</div>
-                    <span class="footer-logo-text">thinkbix</span>
-                </a>
-                <p class="footer-desc">
-                    At Thinkbix Technologies, we believe in the transformative power of technology.
-                    Our team of dedicated experts is committed to delivering innovative digital solutions
-                    that empower businesses to thrive in the digital era.
-                </p>
+            <div class="col-xl-4 col-lg-5">
+                <article class="footer-panel footer-company-panel">
+                    <a class="footer-brand d-flex align-items-center gap-2 mb-3 text-decoration-none" href="index.php">
+                        <span class="footer-brand-logo">
+                            <img src="assets/images/logo.jpg" alt="VIOTX UMBRELLA Logo" width="40" height="40">
+                        </span>
+                        <span class="footer-logo-text">VIOTX UMBRELLA</span>
+                    </a>
+                    <p class="footer-desc">
+                        VIOTX Umbrella Holding Incorporation delivers technology, finance, investment,
+                        tourism, and digital business solutions designed to help organizations scale,
+                        modernize operations, and build long-term value.
+                    </p>
 
-                <h6 class="footer-section-title mt-4">Follow us on</h6>
-                <div class="footer-social">
-                    <a href="#" class="footer-social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="footer-social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="footer-social-icon" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#" class="footer-social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" class="footer-social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-                    <a href="#" class="footer-social-icon" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-                    <a href="#" class="footer-social-icon" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
-                </div>
-            </div>
+                    <div class="footer-info-split">
+                        <div>
+                            <h6 class="footer-section-title">Locations</h6>
+                            <div class="footer-location-list">
+                                <div class="footer-location-item">
+                                    <p class="footer-location-city">Pune</p>
+                                    <p class="footer-contact-text">Workflow Co-Working Space, Baner Road, Baner 411045</p>
+                                </div>
+                                <div class="footer-location-item">
+                                    <p class="footer-location-city">Chhatrapati Sambhaji Nagar</p>
+                                    <p class="footer-contact-text">Aurangabad Saga Co-working Space, CIDCO 431001</p>
+                                </div>
+                                <div class="footer-location-item">
+                                    <p class="footer-location-city">Chikhli</p>
+                                    <p class="footer-contact-text">Pratiksha Complex, 1st floor, Office No-2, 443201</p>
+                                </div>
+                                <div class="footer-location-item">
+                                    <p class="footer-location-city">Buldhana</p>
+                                    <p class="footer-contact-text">Office No - 152 DSD Mall, 443001</p>
+                                </div>
+                            </div>
+                        </div>
 
-            <!-- Our Services -->
-            <div class="col-lg-3 col-md-6">
-                <h6 class="footer-section-title">Our Services</h6>
-                <ul class="footer-services-list">
-                    <li>
-                        <a href="#">Web Development</a> &mdash;
-                        From sleek websites to complex web applications, we craft digital experiences
-                        that captivate your audience and drive conversions.
-                    </li>
-                    <li>
-                        <a href="#">Mobile App Development</a> &mdash;
-                        Engaging mobile applications for iOS and Android that connect you with customers
-                        anywhere, anytime.
-                    </li>
-                    <li>
-                        <a href="#">Digital Marketing</a> &mdash;
-                        Comprehensive strategies to increase your online visibility, generate leads,
-                        and grow brand awareness effectively.
-                    </li>
-                    <li>
-                        <a href="#">Cloud Services</a> &mdash;
-                        Scalable cloud infrastructure and managed services that power your business
-                        operations reliably and securely.
-                    </li>
-                    <li>
-                        <a href="#">Security Solutions</a> &mdash;
-                        Robust cybersecurity measures to protect your digital assets, data, and
-                        reputation from evolving threats.
-                    </li>
-                </ul>
-            </div>
-
-            <!-- FAQ -->
-            <div class="col-lg-6">
-                <h6 class="footer-section-title">FAQ</h6>
-                <div class="footer-faq">
-                    <?php
-                    $faqs = [
-                        [
-                            'q' => 'What services does Thinkbix Technologies provide?',
-                            'a' => 'Thinkbix Technologies offers a wide range of IT services including web development, mobile app development, digital marketing, cloud services, AI-powered chatbot solutions, and cybersecurity.',
-                        ],
-                        [
-                            'q' => 'How can Thinkbix Technologies help my business grow?',
-                            'a' => 'We provide tailored digital strategies that help businesses improve their online presence, automate operations, reach a wider audience, and convert more leads into customers.',
-                        ],
-                        [
-                            'q' => 'Do you offer website development off-shore?',
-                            'a' => 'Yes, our team works with clients globally. We deliver high-quality website development solutions regardless of your location, with clear communication and timely delivery.',
-                        ],
-                        [
-                            'q' => 'What is a WhatsApp Chatbot Solution?',
-                            'a' => 'A WhatsApp Chatbot Solution allows businesses to automate customer interactions through AI-powered bots on the WhatsApp platform, enabling 24/7 support, appointment booking, and lead generation.',
-                        ],
-                        [
-                            'q' => 'How does a WhatsApp Chatbot Benefit my Business?',
-                            'a' => 'It reduces manual workload, provides instant responses to customers, improves engagement, and helps you scale support and sales operations cost-effectively.',
-                        ],
-                        [
-                            'q' => 'What is a WhatsApp Flow & Appointment?',
-                            'a' => 'WhatsApp Flow automates guided conversations, allowing customers to complete actions like booking appointments, filling forms, or making purchases directly in WhatsApp.',
-                        ],
-                    ];
-                    foreach ($faqs as $faq) :
-                    ?>
-                    <div class="faq-item">
-                        <button class="faq-question" onclick="toggleFaq(this)" type="button">
-                            <?php echo htmlspecialchars($faq['q']); ?>
-                            <i class="bi bi-chevron-down faq-chevron"></i>
-                        </button>
-                        <div class="faq-answer">
-                            <p><?php echo htmlspecialchars($faq['a']); ?></p>
+                        <div>
+                            <h6 class="footer-section-title">Contact Details</h6>
+                            <div class="footer-contact-list">
+                                <div class="footer-contact-item">
+                                    <span class="footer-contact-icon"><i class="bi bi-envelope"></i></span>
+                                    <div>
+                                        <p class="footer-contact-label">Email</p>
+                                        <a href="mailto:info@incorp-umbrellagroup.com" class="footer-contact-link">info@incorp-umbrellagroup.com</a>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-item">
+                                    <span class="footer-contact-icon"><i class="bi bi-telephone"></i></span>
+                                    <div>
+                                        <p class="footer-contact-label">Call</p>
+                                        <p class="footer-contact-text">+91 9@#$5 6###2</p>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-item">
+                                    <span class="footer-contact-icon"><i class="bi bi-geo-alt"></i></span>
+                                    <div>
+                                        <p class="footer-contact-label">Location</p>
+                                        <p class="footer-contact-text">Workin Coworking Space, Tilak Road, Pune, Maharashtra 411030</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <?php endforeach; ?>
+                </article>
+            </div>
+
+            <div class="col-xl-8 col-lg-7">
+                <div class="row g-4">
+                    <!-- About Us -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <article class="footer-panel">
+                            <h6 class="footer-section-title">About Us</h6>
+                            <ul class="footer-link-list">
+                                <?php foreach ($aboutLinks as $link) : ?>
+                                <li><a href="#"><?php echo htmlspecialchars($link); ?></a></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <!-- Solutions & Services -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <article class="footer-panel">
+                            <h6 class="footer-section-title">Solutions &amp; Services</h6>
+                            <ul class="footer-link-list">
+                                <?php foreach ($solutionLinks as $link) : ?>
+                                <li><a href="#"><?php echo htmlspecialchars($link); ?></a></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <!-- Internet Security -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <article class="footer-panel">
+                            <h6 class="footer-section-title">Internet Security</h6>
+                            <ul class="footer-link-list">
+                                <?php foreach ($securityLinks as $link) : ?>
+                                <li><a href="#"><?php echo htmlspecialchars($link); ?></a></li>
+                                <?php endforeach; ?>
+                            </ul>
+
+                            <h6 class="footer-section-title footer-subsection-title">Group Authenticity</h6>
+                            <ul class="footer-link-list">
+                                <li><a href="#">Crunch Base</a></li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <!-- Community -->
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <article class="footer-panel">
+                            <h6 class="footer-section-title">Community</h6>
+                            <ul class="footer-link-list footer-community-list">
+                                <?php foreach ($communityLinks as $link) : ?>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi <?php echo htmlspecialchars($link['icon']); ?>"></i>
+                                        <span><?php echo htmlspecialchars($link['label']); ?></span>
+                                    </a>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </article>
+                    </div>
                 </div>
             </div>
 
@@ -109,25 +190,8 @@
 
         <!-- Bottom Bar -->
         <div class="footer-bottom">
-            <p>&copy; <?php echo date('Y'); ?> Thinkbix Technologies. All rights reserved.</p>
+            <p>&copy; <?php echo date('Y'); ?> VIOTX Umbrella Holding Incorporation. All rights reserved.</p>
         </div>
 
     </div>
 </footer>
-
-<script>
-function toggleFaq(btn) {
-    const answer = btn.nextElementSibling;
-    const icon   = btn.querySelector('.faq-chevron');
-    const isOpen = answer.classList.contains('open');
-
-    // Close all open answers
-    document.querySelectorAll('.faq-answer.open').forEach(el => el.classList.remove('open'));
-    document.querySelectorAll('.faq-chevron.rotated').forEach(el => el.classList.remove('rotated'));
-
-    if (!isOpen) {
-        answer.classList.add('open');
-        icon.classList.add('rotated');
-    }
-}
-</script>
