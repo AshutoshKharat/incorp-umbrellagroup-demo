@@ -173,6 +173,7 @@ body {
     color: #1f2937;
     margin-bottom: 0.22rem;
     line-height: 1.35;
+    margin-top: 0.6rem;
 }
 
 .mega-desc {
@@ -651,6 +652,30 @@ body {
 
 /* Tablet landscape & below */
 @media (max-width: 991.98px) {
+    .dropdown-mega .mega-dropdown {
+        width: 100%;
+        min-width: 0;
+        margin-top: 0.35rem;
+        padding: 0.7rem;
+        position: static;
+        left: auto;
+        right: auto;
+        transform: none;
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
+    }
+
+    .dropdown-mega .mega-dropdown.show {
+        display: block;
+    }
+
+    .dropdown-mega .mega-dropdown[data-bs-popper] {
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+
     .hero-section {
         padding: 1.5rem 0 3rem;
         text-align: center;

@@ -49,12 +49,29 @@
                                     shadow-intensity="0"
                                     exposure="1.08"
                                     interaction-prompt="none"
-                                    field-of-view="38deg"
-                                    camera-target="0m -0.25m 0m"
+                                    field-of-view="32deg"
                                     camera-orbit="-12deg 74deg auto"
                                     min-camera-orbit="auto auto auto"
                                     max-camera-orbit="auto auto auto">
                                 </model-viewer>
+                                <!-- <model-viewer
+                                    src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb"
+                                    alt="Tech Robot 3D Model"
+                                    auto-rotate
+                                    auto-rotate-delay="0"
+                                    rotation-per-second="18deg"
+                                    camera-controls
+                                    disable-pan
+                                    disable-zoom
+                                    shadow-intensity="0"
+                                    exposure="1.08"
+                                    interaction-prompt="none"
+                                    field-of-view="32deg"
+                                    camera-target="0m -0.25m 0m"
+                                    camera-orbit="-12deg 74deg auto"
+                                    min-camera-orbit="auto auto auto"
+                                    max-camera-orbit="auto auto auto">
+                                </model-viewer> -->
                             </div>
                         </div>
 
