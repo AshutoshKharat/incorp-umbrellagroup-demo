@@ -388,8 +388,8 @@ body {
 
 .hero-3d-viewer {
     width: 100%;
-    max-width: 640px;
-    height: 560px;
+    max-width: 840px;
+    height: 760px;
     position: relative;
     background: transparent;
 }
@@ -477,8 +477,8 @@ body {
     }
 
     .hero-3d-viewer {
-        max-width: 460px;
-        height: 400px;
+        max-width: 660px;
+        height: 600px;
     }
 
     .hero-model-shell::before {
@@ -511,8 +511,8 @@ body {
     }
 
     .hero-3d-viewer {
-        max-width: 340px;
-        height: 300px;
+        max-width: 440px;
+        height: 400px;
     }
 
     .hero-3d-viewer model-viewer {
