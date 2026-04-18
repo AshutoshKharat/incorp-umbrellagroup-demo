@@ -49,11 +49,11 @@
                                     shadow-intensity="0"
                                     exposure="1.08"
                                     interaction-prompt="none"
-                                    field-of-view="20deg"
-                                    camera-target="0m 0.9m 0m"
-                                    camera-orbit="-12deg 82deg 5.3m"
-                                    min-camera-orbit="auto auto 5.3m"
-                                    max-camera-orbit="auto auto 5.3m">
+                                    field-of-view="38deg"
+                                    camera-target="0m -0.25m 0m"
+                                    camera-orbit="-12deg 74deg auto"
+                                    min-camera-orbit="auto auto auto"
+                                    max-camera-orbit="auto auto auto">
                                 </model-viewer>
                             </div>
                         </div>
