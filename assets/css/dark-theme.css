@@ -126,6 +126,10 @@
 body,
 .intelligent-section,
 .tech-stack-section,
+.about-page-intro,
+.about-origin-section,
+.about-origin-card,
+.about-origin-milestone,
 .about-company-section,
 .tech-solutions-section,
 .solutions-services-section,
@@ -229,6 +233,43 @@ body,
 [data-theme="dark"] .about-company-card-accent {
     background: linear-gradient(180deg, #1e293b 0%, #172033 100%);
     border-color: #475569;
+}
+
+/* ============================================================
+   DARK THEME — ABOUT PAGE INTRO + ORIGIN STORY
+   ============================================================ */
+[data-theme="dark"] .about-page-intro {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+    color: #f8fafc;
+}
+
+[data-theme="dark"] .about-origin-section {
+    background: #0f172a;
+}
+
+[data-theme="dark"] .about-origin-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .about-origin-card p {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .about-origin-milestone {
+    background: #172033;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .about-origin-milestone h3 {
+    color: #dbeafe;
+}
+
+[data-theme="dark"] .about-origin-milestone p {
+    color: #cbd5e1;
 }
 
 /* ============================================================

@@ -1,4 +1,4 @@
-<section class="testimonials-section">
+<section class="testimonials-section" id="testimonials">
     <div class="container-xl">
 
         <div class="row g-4">

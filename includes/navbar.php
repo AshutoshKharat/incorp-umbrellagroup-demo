@@ -38,13 +38,13 @@
                        About us
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark border-0 shadow-lg">
-                        <li><a class="dropdown-item" href="#">About Us</a></li>
-                        <li><a class="dropdown-item" href="#">Management Team</a></li>
-                        <li><a class="dropdown-item" href="#">Awards and Recognition</a></li>
-                        <li><a class="dropdown-item" href="#">Core Values</a></li>
-                        <li><a class="dropdown-item" href="#">Delivering Services</a></li>
-                        <li><a class="dropdown-item" href="#">Leadership Principles</a></li>
-                        <li><a class="dropdown-item" href="#">Our Positions</a></li>
+                        <li><a class="dropdown-item" href="about.php#how-we-began">About Us</a></li>
+                        <li><a class="dropdown-item" href="team.php">Management Team</a></li>
+                        <li><a class="dropdown-item" href="about.php#testimonials">Awards and Recognition</a></li>
+                        <li><a class="dropdown-item" href="about.php#about-company">Core Values</a></li>
+                        <li><a class="dropdown-item" href="about.php#solutions-services">Delivering Services</a></li>
+                        <li><a class="dropdown-item" href="about.php#tech-solutions">Leadership Principles</a></li>
+                        <li><a class="dropdown-item" href="about.php#faq">Our Positions</a></li>
                     </ul>
                 </li>
                 <!-- About us end -->

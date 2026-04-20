@@ -1,4 +1,4 @@
-<section class="tech-solutions-section">
+<section class="tech-solutions-section" id="tech-solutions">
     <div class="container-xl">
 
         <!-- Section Header -->
