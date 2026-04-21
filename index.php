@@ -1,21 +1,26 @@
 <?php
 $pageTitle = 'Home';
 require_once 'includes/header.php';
+require_once 'includes/navbar.php';
+
+$sections = [
+    'hero',
+    'solutions-services',
+    'tech-solutions',
+    'about-company',
+    // 'ai-appointment',
+    // 'intelligent',
+    // 'testimonials',
+    'faq-section',
+    'tech-stack',
+    'site-footer',
+];
 ?>
 
-<?php require_once 'includes/navbar.php'; ?>
-
 <main>
-    <?php require_once 'includes/hero.php'; ?>
-    <?php require_once 'includes/solutions-services.php'; ?>
-    <?php require_once 'includes/tech-solutions.php'; ?>
-    <?php require_once 'includes/about-company.php'; ?>
-    <?php require_once 'includes/ai-appointment.php'; ?>
-    <?php require_once 'includes/intelligent.php'; ?>
-    <?php require_once 'includes/testimonials.php'; ?>
-    <?php require_once 'includes/faq-section.php'; ?>
-    <?php require_once 'includes/tech-stack.php'; ?>
-    <?php require_once 'includes/site-footer.php'; ?>
+    <?php foreach ($sections as $section): ?>
+        <?php require 'includes/' . $section . '.php'; ?>
+    <?php endforeach; ?>
 </main>
 
-<?php require_once 'includes/footer.php'; ?>
+<?php require 'includes/footer.php'; ?>

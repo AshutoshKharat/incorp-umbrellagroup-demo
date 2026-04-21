@@ -13,6 +13,22 @@ $routeMap = [
 	'/about.php' => 'about.php',
 	'/team' => 'team.php',
 	'/team.php' => 'team.php',
+	'/core-values' => 'core-values.php',
+	'/core-values.php' => 'core-values.php',
+	'/leadership-principles' => 'leadership-principles.php',
+	'/leadership-principles.php' => 'leadership-principles.php',
+	'/our-positions' => 'our-positions.php',
+	'/our-positions.php' => 'our-positions.php',
+	'/working-ethics' => 'working-ethics.php',
+	'/working-ethics.php' => 'working-ethics.php',
+	'/vision-and-mission' => 'vision-and-mission.php',
+	'/vision-and-mission.php' => 'vision-and-mission.php',
+	'/empowering-entrepreneurship' => 'empowering-entrepreneurship.php',
+	'/empowering-entrepreneurship.php' => 'empowering-entrepreneurship.php',
+	'/learning' => 'learning.php',
+	'/learning.php' => 'learning.php',
+	'/sample' => 'sample.php',
+	'/sample.php' => 'sample.php',
 ];
 
 $targetFile = $routeMap[$normalizedPath] ?? null;

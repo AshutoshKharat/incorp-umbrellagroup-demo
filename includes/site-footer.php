@@ -3,17 +3,20 @@
 
         <?php
         $aboutLinks = [
-            'About',
-            'Team',
-            'FAQ',
-            'Mission',
-            'Contact',
-            'Disclaimer',
-            'Cookies Policy',
-            'Terms & Condition',
-            'Common Fraudulent Cases',
-            'Climate Commitment',
-            'Verify Trusted Site',
+            'About'                  => 'about.php',
+            'Team'                   => 'team.php',
+            'Core Values'            => 'core-values.php',
+            'Vision &amp; Mission'   => 'vision-and-mission.php',
+            'Leadership Principles'  => 'leadership-principles.php',
+            'Our Positions'          => 'our-positions.php',
+            'Working Ethics'         => 'working-ethics.php',
+            'FAQ'                    => '#',
+            'Contact'                => '#',
+            'Disclaimer'             => '#',
+            'Cookies Policy'         => '#',
+            'Terms &amp; Condition'  => '#',
+            'Climate Commitment'     => '#',
+            'Verify Trusted Site'    => '#',
         ];
 
         $solutionLinks = [
@@ -131,8 +134,8 @@
                         <article class="footer-panel">
                             <h6 class="footer-section-title">About Us</h6>
                             <ul class="footer-link-list">
-                                <?php foreach ($aboutLinks as $link) : ?>
-                                <li><a href="#"><?php echo htmlspecialchars($link); ?></a></li>
+                                <?php foreach ($aboutLinks as $label => $href) : ?>
+                                <li><a href="<?php echo $href; ?>"><?php echo $label; ?></a></li>
                                 <?php endforeach; ?>
                             </ul>
                         </article>

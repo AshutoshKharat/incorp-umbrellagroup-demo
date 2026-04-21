@@ -11,10 +11,12 @@
 
         <!-- Right Controls: Theme Toggle + Hamburger -->
         <div class="d-flex align-items-center gap-2 ms-auto ms-lg-0 order-lg-last">
-            <button class="btn-theme-toggle" id="themeToggle"
+            <button class="theme-toggle-switch" id="themeToggle"
                     type="button" aria-label="Toggle dark mode" title="Toggle dark / light mode">
-                <i class="bi bi-moon-fill theme-icon-dark"></i>
-                <i class="bi bi-sun-fill theme-icon-light"></i>
+                <span class="theme-toggle-thumb">
+                    <i class="bi bi-sun-fill theme-toggle-sun"></i>
+                    <i class="bi bi-moon-fill theme-toggle-moon"></i>
+                </span>
             </button>
             <button class="navbar-toggler border-0 shadow-none" type="button"
                     data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -41,10 +43,10 @@
                         <li><a class="dropdown-item" href="about.php#how-we-began">About Us</a></li>
                         <li><a class="dropdown-item" href="team.php">Management Team</a></li>
                         <li><a class="dropdown-item" href="about.php#testimonials">Awards and Recognition</a></li>
-                        <li><a class="dropdown-item" href="about.php#about-company">Core Values</a></li>
-                        <li><a class="dropdown-item" href="about.php#solutions-services">Delivering Services</a></li>
-                        <li><a class="dropdown-item" href="about.php#tech-solutions">Leadership Principles</a></li>
-                        <li><a class="dropdown-item" href="about.php#faq">Our Positions</a></li>
+                        <li><a class="dropdown-item" href="core-values.php">Core Values</a></li>
+                        <li><a class="dropdown-item" href="core-values.php">Delivering Services</a></li>
+                        <li><a class="dropdown-item" href="leadership-principles.php">Leadership Principles</a></li>
+                        <li><a class="dropdown-item" href="our-positions.php">Our Positions</a></li>
                     </ul>
                 </li>
                 <!-- About us end -->
@@ -57,8 +59,8 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark border-0 shadow-lg">
                         <li><a class="dropdown-item" href="#">Team & Worforce Management</a></li>
-                        <li><a class="dropdown-item" href="https://www.incorp-umbrellagroup.com/empowering_entrepreneurship.php">Empowering Entreneurship </a></li>
-                        <li><a class="dropdown-item" href="https://www.incorp-umbrellagroup.com/learning.php">Learning</a></li>
+                        <li><a class="dropdown-item" href="empowering-entrepreneurship.php">Empowering Entrepreneurship</a></li>
+                        <li><a class="dropdown-item" href="learning.php">Learning</a></li>
                     </ul>
                 </li>
                 <!-- Business Focus end -->
@@ -317,8 +319,8 @@
                         Internet Tech
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark border-0 shadow-lg">
-                        <li><a class="dropdown-item" href="#">Working Ethics </a></li>
-                        <li><a class="dropdown-item" href="#">Vision and Mission</a></li>
+                        <li><a class="dropdown-item" href="working-ethics.php">Working Ethics</a></li>
+                        <li><a class="dropdown-item" href="vision-and-mission.php">Vision and Mission</a></li>
                         <li><a class="dropdown-item" href="#">Tech for Good</a></li>
                     </ul>
                 </li>
