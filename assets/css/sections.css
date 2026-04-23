@@ -1740,3 +1740,26 @@
     color: #6b7280;
     line-height: 1.75;
 }
+
+.op-card-kicker {
+    margin: 0.7rem 0 0.35rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #374151;
+}
+
+.op-card-list {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.op-card-list li {
+    font-size: 0.83rem;
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 0.22rem;
+}
+
+.op-card-list li:last-child {
+    margin-bottom: 0;
+}

@@ -27,6 +27,8 @@ $routeMap = [
 	'/empowering-entrepreneurship.php' => 'empowering-entrepreneurship.php',
 	'/learning' => 'learning.php',
 	'/learning.php' => 'learning.php',
+	'/tech-for-good' => 'tech-for-good.php',
+	'/tech-for-good.php' => 'tech-for-good.php',
 	'/sample' => 'sample.php',
 	'/sample.php' => 'sample.php',
 ];

@@ -115,6 +115,83 @@
     color: #e2e8f0;
 }
 
+[data-theme="dark"] .subsidiary-dropdown {
+    background: #111827;
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .subsidiary-categories {
+    background: #0f172a;
+    border-right-color: rgba(148, 163, 184, 0.2);
+}
+
+[data-theme="dark"] .subsidiary-tab {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .subsidiary-tab::after {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .subsidiary-tab:hover,
+[data-theme="dark"] .subsidiary-tab:focus-visible {
+    background: rgba(148, 163, 184, 0.16);
+    color: #f8fafc;
+}
+
+[data-theme="dark"] .subsidiary-tab.is-active {
+    background: #d4932f;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .subsidiary-content {
+    background: #1b2232;
+}
+
+[data-theme="dark"] .subsidiary-panel-title {
+    color: #93c5fd;
+}
+
+[data-theme="dark"] .subsidiary-link {
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .subsidiary-link-title {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .subsidiary-link:hover,
+[data-theme="dark"] .subsidiary-link:focus-visible {
+    color: #bfdbfe;
+}
+
+[data-theme="dark"] .subsidiary-accordion {
+    --bs-accordion-border-color: rgba(148, 163, 184, 0.24);
+    --bs-accordion-btn-bg: #1e293b;
+    --bs-accordion-active-bg: #243447;
+    --bs-accordion-btn-focus-border-color: #60a5fa;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.12rem rgba(96, 165, 250, 0.28);
+    --bs-accordion-active-color: #f8fafc;
+    --bs-accordion-btn-color: #e2e8f0;
+    --bs-accordion-color: #e2e8f0;
+    --bs-accordion-bg: #162133;
+}
+
+[data-theme="dark"] .subsidiary-accordion .accordion-item {
+    border-color: rgba(148, 163, 184, 0.24);
+}
+
+[data-theme="dark"] .subsidiary-accordion .accordion-button::after {
+    filter: invert(0.92) hue-rotate(180deg) saturate(0.7);
+}
+
+@media (max-width: 991.98px) {
+    [data-theme="dark"] .subsidiary-categories {
+        border-bottom-color: rgba(148, 163, 184, 0.2);
+    }
+}
+
 [data-theme="dark"] .hero-sample-panel {
     background: rgba(15, 23, 42, 0.62);
     border: 1px solid rgba(148, 163, 184, 0.24);
@@ -482,6 +559,18 @@ body,
 
 [data-theme="dark"] .op-card-text {
     color: #94a3b8;
+}
+
+[data-theme="dark"] .op-card-kicker {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .op-card-list li {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .op-card-list li strong {
+    color: #e2e8f0;
 }
 
 /* ============================================================

@@ -202,6 +202,165 @@ body {
     color: #374151;
 }
 
+/* Subsidiary arm custom dropdown */
+.subsidiary-dropdown {
+    width: min(1320px, calc(100vw - 2rem));
+    min-width: 320px;
+    padding: 0;
+    display: none;
+    overflow: hidden;
+}
+
+.subsidiary-dropdown.show {
+    display: block;
+}
+
+.subsidiary-layout {
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    min-height: 520px;
+}
+
+.subsidiary-categories {
+    background: #f1f3f5;
+    border-right: 1px solid #e5e7eb;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.subsidiary-tab {
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #1f2937;
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+    padding: 0.8rem 2.2rem 0.8rem 0.7rem;
+    position: relative;
+    transition: background 0.18s ease, color 0.18s ease;
+}
+
+.subsidiary-tab::after {
+    content: "\203A";
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: #0f172a;
+    opacity: 0.75;
+}
+
+.subsidiary-tab:hover,
+.subsidiary-tab:focus-visible {
+    background: #e7eaef;
+    color: #111827;
+    outline: none;
+}
+
+.subsidiary-tab.is-active {
+    background: #e6a437;
+    color: #ffffff;
+}
+
+.subsidiary-tab.is-active::after {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.subsidiary-content {
+    background: #f6f8fb;
+    padding: 2rem 2.8rem;
+}
+
+.subsidiary-panel {
+    display: none;
+}
+
+.subsidiary-panel.is-active {
+    display: block;
+}
+
+.subsidiary-panel-title {
+    margin-bottom: 0.9rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.subsidiary-link {
+    display: block;
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 0.2rem 0;
+    transition: color 0.18s ease;
+}
+
+.subsidiary-link-title {
+    margin: 0.4rem 0 0.4rem 0;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #334155;
+    letter-spacing: 0.01em;
+    border-bottom: 1px solid;
+}
+
+.subsidiary-link:hover,
+.subsidiary-link:focus-visible {
+    color: #1d4ed8;
+    outline: none;
+}
+
+.subsidiary-accordion {
+    --bs-accordion-border-color: #d9dee7;
+    --bs-accordion-border-radius: 10px;
+    --bs-accordion-btn-bg: #eef2f7;
+    --bs-accordion-active-bg: #e7edf7;
+    --bs-accordion-btn-focus-border-color: #93c5fd;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.12rem rgba(59, 130, 246, 0.25);
+    --bs-accordion-active-color: #1f2937;
+    --bs-accordion-btn-color: #1f2937;
+    --bs-accordion-color: #1f2937;
+    --bs-accordion-bg: #f9fbff;
+}
+
+.subsidiary-accordion .accordion-item {
+    border: 1px solid var(--bs-accordion-border-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.subsidiary-accordion .accordion-item + .accordion-item {
+    margin-top: 0.45rem;
+}
+
+.subsidiary-accordion .accordion-button {
+    font-size: 0.86rem;
+    font-weight: 600;
+    padding: 0.58rem 0.78rem;
+}
+
+.subsidiary-accordion .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.subsidiary-accordion .accordion-body {
+    padding: 0.52rem 0.78rem 0.62rem;
+}
+
+.subsidiary-accordion .accordion-body .subsidiary-link {
+    line-height: 1.4;
+    padding: 0.16rem 0;
+}
+
 /* Mobile toggle */
 .navbar-toggler:focus {
     box-shadow: none;
@@ -678,6 +837,33 @@ body {
         top: auto;
         left: auto;
         transform: none;
+    }
+
+    .subsidiary-layout {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .subsidiary-categories {
+        border-right: 0;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .subsidiary-tab {
+        font-size: 0.88rem;
+    }
+
+    .subsidiary-content {
+        padding: 1rem;
+    }
+
+    .subsidiary-panel-title {
+        font-size: 0.95rem;
+    }
+
+    .subsidiary-link {
+        font-size: 0.88rem;
+        line-height: 1.45;
     }
 
     .hero-section {

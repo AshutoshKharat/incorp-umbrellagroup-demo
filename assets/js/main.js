@@ -49,6 +49,65 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ── SUBSIDIARY DROPDOWN TABS ───────────────────────────────
+    const subsidiaryDropdown = document.querySelector('.subsidiary-dropdown');
+    const subsidiaryToggle = document.querySelector('.dropdown-mega > .dropdown-toggle');
+    const subsidiaryParent = subsidiaryToggle ? subsidiaryToggle.closest('.dropdown') : null;
+
+    // Reset accidental persisted/open state on refresh.
+    if (subsidiaryDropdown && subsidiaryToggle && subsidiaryParent) {
+        subsidiaryDropdown.classList.remove('show');
+        subsidiaryParent.classList.remove('show');
+        subsidiaryToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    if (subsidiaryDropdown) {
+        const tabs = subsidiaryDropdown.querySelectorAll('.subsidiary-tab');
+        const panels = subsidiaryDropdown.querySelectorAll('.subsidiary-panel');
+
+        const collapsePanelAccordions = (panel) => {
+            if (!panel) return;
+
+            const collapses = panel.querySelectorAll('.accordion-collapse');
+            collapses.forEach((collapseEl) => {
+                const collapse = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
+                collapse.hide();
+            });
+        };
+
+        const activateSubsidiaryPanel = (targetKey) => {
+            let activePanel = null;
+
+            tabs.forEach((tab) => {
+                const isTarget = tab.dataset.subsidiaryTarget === targetKey;
+                tab.classList.toggle('is-active', isTarget);
+                tab.setAttribute('aria-selected', isTarget ? 'true' : 'false');
+            });
+
+            panels.forEach((panel) => {
+                const isTargetPanel = panel.dataset.subsidiaryPanel === targetKey;
+                panel.classList.toggle('is-active', isTargetPanel);
+                if (isTargetPanel) activePanel = panel;
+            });
+
+            // Reset accordion state on panel switch; user opens desired group manually.
+            collapsePanelAccordions(activePanel);
+        };
+
+        // Keep mega dropdown open while user interacts with internal tab panel.
+        subsidiaryDropdown.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                activateSubsidiaryPanel(tab.dataset.subsidiaryTarget);
+            });
+        });
+    }
+
     // Subtle scroll-in animation for service cards
     if ('IntersectionObserver' in window) {
         const cards = document.querySelectorAll('.service-card');

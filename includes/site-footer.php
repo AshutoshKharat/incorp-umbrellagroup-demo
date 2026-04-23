@@ -16,7 +16,7 @@
             'Cookies Policy'         => '#',
             'Terms &amp; Condition'  => '#',
             'Climate Commitment'     => '#',
-            'Verify Trusted Site'    => '#',
+            'Verify Trusted Site'    => 'https://www.trustedsite.com/verify?host=incorp-umbrellagroup.com',
         ];
 
         $solutionLinks = [
@@ -165,7 +165,7 @@
 
                             <h6 class="footer-section-title footer-subsection-title">Group Authenticity</h6>
                             <ul class="footer-link-list">
-                                <li><a href="#">Crunch Base</a></li>
+                                <li><a href="https://www.crunchbase.com/organization/umbrella-incorp">Crunch Base</a></li>
                             </ul>
                         </article>
                     </div>
