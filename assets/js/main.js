@@ -49,6 +49,119 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ── DESKTOP DROPDOWN HOVER + PROXIMITY ────────────────────
+    const desktopDropdownMedia = window.matchMedia('(min-width: 992px)');
+    const navbarMenuRoot = document.querySelector('.navbar .navbar-nav');
+
+    if (navbarMenuRoot && typeof bootstrap !== 'undefined' && bootstrap.Dropdown) {
+        const dropdownItems = Array.from(navbarMenuRoot.querySelectorAll('.nav-item.dropdown'));
+        const PROXIMITY_PX = 24;
+        const CLOSE_DELAY_MS = 140;
+
+        let activeDropdown = null;
+        let closeTimer = null;
+
+        const getToggle = (dropdownItem) => dropdownItem.querySelector(':scope > .dropdown-toggle');
+        const getMenu = (dropdownItem) => dropdownItem.querySelector(':scope > .dropdown-menu');
+
+        const pointNearRect = (x, y, rect, padding) => {
+            return (
+                x >= rect.left - padding &&
+                x <= rect.right + padding &&
+                y >= rect.top - padding &&
+                y <= rect.bottom + padding
+            );
+        };
+
+        const isPointerNearDropdown = (event, dropdownItem) => {
+            const toggle = getToggle(dropdownItem);
+            const menu = getMenu(dropdownItem);
+            if (!toggle || !menu) return false;
+
+            const toggleRect = toggle.getBoundingClientRect();
+            const nearToggle = pointNearRect(event.clientX, event.clientY, toggleRect, PROXIMITY_PX);
+            if (nearToggle) return true;
+
+            if (!menu.classList.contains('show')) return false;
+
+            const menuRect = menu.getBoundingClientRect();
+            return pointNearRect(event.clientX, event.clientY, menuRect, PROXIMITY_PX);
+        };
+
+        const clearCloseTimer = () => {
+            if (!closeTimer) return;
+            clearTimeout(closeTimer);
+            closeTimer = null;
+        };
+
+        const hideDropdown = (dropdownItem) => {
+            const toggle = getToggle(dropdownItem);
+            if (!toggle) return;
+
+            bootstrap.Dropdown.getOrCreateInstance(toggle).hide();
+        };
+
+        const showDropdown = (dropdownItem) => {
+            const toggle = getToggle(dropdownItem);
+            if (!toggle) return;
+
+            if (activeDropdown && activeDropdown !== dropdownItem) {
+                hideDropdown(activeDropdown);
+            }
+
+            bootstrap.Dropdown.getOrCreateInstance(toggle).show();
+            activeDropdown = dropdownItem;
+        };
+
+        const scheduleCloseActive = () => {
+            clearCloseTimer();
+            closeTimer = setTimeout(() => {
+                if (activeDropdown) {
+                    hideDropdown(activeDropdown);
+                    activeDropdown = null;
+                }
+            }, CLOSE_DELAY_MS);
+        };
+
+        document.addEventListener('mousemove', (event) => {
+            if (!desktopDropdownMedia.matches) return;
+
+            const hoveredDropdown = dropdownItems.find((dropdownItem) => {
+                return dropdownItem.contains(event.target) || isPointerNearDropdown(event, dropdownItem);
+            });
+
+            if (hoveredDropdown) {
+                clearCloseTimer();
+                showDropdown(hoveredDropdown);
+                return;
+            }
+
+            scheduleCloseActive();
+        });
+
+        navbarMenuRoot.addEventListener('mouseleave', () => {
+            if (!desktopDropdownMedia.matches) return;
+            scheduleCloseActive();
+        });
+
+        const resetDesktopDropdownState = () => {
+            clearCloseTimer();
+            if (desktopDropdownMedia.matches) return;
+
+            dropdownItems.forEach((dropdownItem) => {
+                hideDropdown(dropdownItem);
+            });
+
+            activeDropdown = null;
+        };
+
+        if (typeof desktopDropdownMedia.addEventListener === 'function') {
+            desktopDropdownMedia.addEventListener('change', resetDesktopDropdownState);
+        } else if (typeof desktopDropdownMedia.addListener === 'function') {
+            desktopDropdownMedia.addListener(resetDesktopDropdownState);
+        }
+    }
+
     // ── SUBSIDIARY DROPDOWN TABS ───────────────────────────────
     const subsidiaryDropdown = document.querySelector('.subsidiary-dropdown');
     const subsidiaryToggle = document.querySelector('.dropdown-mega > .dropdown-toggle');
