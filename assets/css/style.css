@@ -117,6 +117,7 @@ body {
 
 .mega-dropdown {
     width: min(1240px, calc(100vw - 2rem));
+    max-width: calc(100vw - 1rem);
     min-width: 320px;
     padding: 1.1rem 1.2rem;
     border-radius: 12px;
@@ -138,7 +139,7 @@ body {
 .mega-dropdown[data-bs-popper] {
     top: calc(100% + 0.35rem);
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(calc(-50% + var(--dropdown-shift-x, 0px)));
 }
 
 .mega-item {
@@ -205,10 +206,24 @@ body {
 /* Subsidiary arm custom dropdown */
 .subsidiary-dropdown {
     width: min(1320px, calc(100vw - 2rem));
+    max-width: calc(100vw - 1rem);
     min-width: 320px;
     padding: 0;
     display: none;
     overflow: hidden;
+}
+
+/* Safari/Chrome: prefer dynamic viewport unit when available. */
+@supports (width: 100dvw) {
+    .mega-dropdown {
+        width: min(1240px, calc(100dvw - 2rem));
+        max-width: calc(100dvw - 1rem);
+    }
+
+    .subsidiary-dropdown {
+        width: min(1320px, calc(100dvw - 2rem));
+        max-width: calc(100dvw - 1rem);
+    }
 }
 
 .subsidiary-dropdown.show {

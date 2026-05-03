@@ -55,7 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (navbarMenuRoot && typeof bootstrap !== 'undefined' && bootstrap.Dropdown) {
         const dropdownItems = Array.from(navbarMenuRoot.querySelectorAll('.nav-item.dropdown'));
+        const megaMenus = Array.from(
+            navbarMenuRoot.querySelectorAll('.dropdown-mega > .mega-dropdown, .dropdown-mega > .subsidiary-dropdown')
+        );
         const PROXIMITY_PX = 24;
+        const VIEWPORT_GAP_PX = 8;
         const CLOSE_DELAY_MS = 140;
 
         let activeDropdown = null;
@@ -63,6 +67,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const getToggle = (dropdownItem) => dropdownItem.querySelector(':scope > .dropdown-toggle');
         const getMenu = (dropdownItem) => dropdownItem.querySelector(':scope > .dropdown-menu');
+
+        const clearViewportShift = (menu) => {
+            menu.style.setProperty('--dropdown-shift-x', '0px');
+        };
+
+        const fitMenuIntoViewport = (menu) => {
+            if (!desktopDropdownMedia.matches) {
+                clearViewportShift(menu);
+                return;
+            }
+
+            clearViewportShift(menu);
+
+            const rect = menu.getBoundingClientRect();
+            let shiftX = 0;
+
+            if (rect.right > window.innerWidth - VIEWPORT_GAP_PX) {
+                shiftX -= rect.right - (window.innerWidth - VIEWPORT_GAP_PX);
+            }
+
+            if (rect.left + shiftX < VIEWPORT_GAP_PX) {
+                shiftX += VIEWPORT_GAP_PX - (rect.left + shiftX);
+            }
+
+            menu.style.setProperty('--dropdown-shift-x', `${Math.round(shiftX)}px`);
+        };
 
         const pointNearRect = (x, y, rect, padding) => {
             return (
@@ -103,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const showDropdown = (dropdownItem) => {
             const toggle = getToggle(dropdownItem);
+            const menu = getMenu(dropdownItem);
             if (!toggle) return;
 
             if (activeDropdown && activeDropdown !== dropdownItem) {
@@ -111,6 +142,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             bootstrap.Dropdown.getOrCreateInstance(toggle).show();
             activeDropdown = dropdownItem;
+
+            if (menu) {
+                requestAnimationFrame(() => {
+                    fitMenuIntoViewport(menu);
+                });
+            }
         };
 
         const scheduleCloseActive = () => {
@@ -153,7 +190,20 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             activeDropdown = null;
+
+            megaMenus.forEach((menu) => {
+                clearViewportShift(menu);
+            });
         };
+
+        window.addEventListener('resize', () => {
+            if (!desktopDropdownMedia.matches) return;
+            megaMenus.forEach((menu) => {
+                if (menu.classList.contains('show')) {
+                    fitMenuIntoViewport(menu);
+                }
+            });
+        });
 
         if (typeof desktopDropdownMedia.addEventListener === 'function') {
             desktopDropdownMedia.addEventListener('change', resetDesktopDropdownState);
