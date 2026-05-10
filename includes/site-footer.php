@@ -41,19 +41,19 @@
         ];
 
         $communityLinks = [
-            ['icon' => 'bi-facebook', 'label' => 'Facebook'],
-            ['icon' => 'bi-instagram', 'label' => 'Instagram'],
-            ['icon' => 'bi-twitter-x', 'label' => 'Twitter'],
-            ['icon' => 'bi-linkedin', 'label' => 'LinkedIn Page'],
-            ['icon' => 'bi-youtube', 'label' => 'Youtube'],
-            ['icon' => 'bi-reddit', 'label' => 'Reddit'],
-            ['icon' => 'bi-telegram', 'label' => 'Telegram'],
-            ['icon' => 'bi-github', 'label' => 'Github'],
-            ['icon' => 'bi-twitch', 'label' => 'Twitch'],
-            ['icon' => 'bi-medium', 'label' => 'Medium'],
-            ['icon' => 'bi-discord', 'label' => 'Discord'],
-            ['icon' => 'bi-pinterest', 'label' => 'Pinterest'],
-            ['icon' => 'bi-quora', 'label' => 'Quora'],
+            ['icon' => 'bi-facebook', 'label' => 'Facebook', 'url' => 'https://www.facebook.com/viotsoftinfotech'],
+            ['icon' => 'bi-instagram', 'label' => 'Instagram', 'url' => 'https://www.instagram.com/viotx_softinfotech3'],
+            ['icon' => 'bi-twitter-x', 'label' => 'Twitter', 'url' => 'https://x.com/ViotxSofInfoTec'],
+            ['icon' => 'bi-linkedin', 'label' => 'LinkedIn Page', 'url' => 'https://www.linkedin.com/company/viotxsoftinfotech/'],
+            ['icon' => 'bi-youtube', 'label' => 'Youtube', 'url' => 'https://www.youtube.com/@ViotX_SoftInfoTech'],
+            ['icon' => 'bi-reddit', 'label' => 'Reddit', 'url' => 'https://www.reddit.com/u/Viotx_Blockchain'],
+            ['icon' => 'bi-telegram', 'label' => 'Telegram', 'url' => 'https://t.me/viotxweb3'],
+            ['icon' => 'bi-github', 'label' => 'Github', 'url' => 'https://it.incorp-umbrellagroup.com/#'],
+            ['icon' => 'bi-twitch', 'label' => 'Twitch', 'url' => 'https://it.incorp-umbrellagroup.com/#'],
+            ['icon' => 'bi-medium', 'label' => 'Medium', 'url' => 'https://medium.com/@Umbrellax_web3'],
+            ['icon' => 'bi-discord', 'label' => 'Discord', 'url' => 'https://discord.com/invite/gch2HsKTgs'],
+            ['icon' => 'bi-pinterest', 'label' => 'Pinterest', 'url' => 'https://in.pinterest.com/viotx_web3'],
+            ['icon' => 'bi-quora', 'label' => 'Quora', 'url' => 'https://viotxsspace.quora.com/?invite_code=jlY6GoHLBL1xKsRoC0RA'],
         ];
         ?>
 
@@ -177,7 +177,7 @@
                             <ul class="footer-link-list footer-community-list">
                                 <?php foreach ($communityLinks as $link) : ?>
                                 <li>
-                                    <a href="#">
+                                    <a href="<?php echo htmlspecialchars($link['url']); ?>" target="_blank" rel="noopener noreferrer">
                                         <i class="bi <?php echo htmlspecialchars($link['icon']); ?>"></i>
                                         <span><?php echo htmlspecialchars($link['label']); ?></span>
                                     </a>
