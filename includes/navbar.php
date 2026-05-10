@@ -27,7 +27,7 @@
 
         <!-- Nav Links -->
         <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-1">
+            <ul class="navbar-nav ms-lg-3 me-auto mb-2 mb-lg-0 gap-lg-1">
 
                 <!-- <li class="nav-item">
                     <a class="nav-link active" href="index.php">Home</a>
@@ -79,6 +79,15 @@
                                 </button>
                                 <button class="subsidiary-tab" type="button" role="tab" aria-selected="false" data-subsidiary-target="umbrella-e-services-megacenter">
                                     Umbrella E-services Megacenter
+                                </button>
+                                <button class="subsidiary-tab" type="button" role="tab" aria-selected="false" data-subsidiary-target="viotx-umbrella-web3-llp">
+                                    Viotx Umbrella Web3 LLP
+                                </button>
+                                <button class="subsidiary-tab" type="button" role="tab" aria-selected="false" data-subsidiary-target="finserv-umbrella-web3-llp">
+                                    FinServ Umbrella
+                                </button>
+                                <button class="subsidiary-tab" type="button" role="tab" aria-selected="false" data-subsidiary-target="umbrella-news-admedia">
+                                    Umbrella News AdMedia
                                 </button>
                             </div>
 
