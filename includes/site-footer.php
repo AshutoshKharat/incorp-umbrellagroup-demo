@@ -80,11 +80,11 @@
                             <div class="footer-location-list">
                                 <div class="footer-location-item">
                                     <p class="footer-location-city">Pune</p>
-                                    <p class="footer-contact-text">Workflow Co-Working Space, Baner Road, Baner 411045</p>
+                                    <p class="footer-contact-text">Workflow Co-Working Space, Icon Tower, Baner Road, Baner-411045</p>
                                 </div>
                                 <div class="footer-location-item">
                                     <p class="footer-location-city">Chhatrapati Sambhaji Nagar</p>
-                                    <p class="footer-contact-text">Aurangabad Saga Co-working Space, CIDCO 431001</p>
+                                    <p class="footer-contact-text">Aurangabad Saga Co-working Space, CIDCO-431001</p>
                                 </div>
                                 <div class="footer-location-item">
                                     <p class="footer-location-city">Chikhli</p>
