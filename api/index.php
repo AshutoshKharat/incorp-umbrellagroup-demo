@@ -31,6 +31,8 @@ $routeMap = [
 	'/tech-for-good.php' => 'tech-for-good.php',
 	'/sample' => 'sample.php',
 	'/sample.php' => 'sample.php',
+	'/umbrellax_brand_email_template' => 'umbrellax_brand_email_template.php',
+	'/umbrellax_brand_email_template.php' => 'umbrellax_brand_email_template.php',
 ];
 
 $targetFile = $routeMap[$normalizedPath] ?? null;
