@@ -216,12 +216,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const subsidiaryDropdown = document.querySelector('.subsidiary-dropdown');
     const subsidiaryToggle = document.querySelector('.dropdown-mega > .dropdown-toggle');
     const subsidiaryParent = subsidiaryToggle ? subsidiaryToggle.closest('.dropdown') : null;
+    const subsidiaryStorageKeys = {
+        activeTab: 'subsidiaryActiveTab',
+        keepOpenOnce: 'subsidiaryKeepOpenOnce'
+    };
 
-    // Reset accidental persisted/open state on refresh.
+    // Keep dropdown closed by default unless explicitly restoring from same-tab redirect.
     if (subsidiaryDropdown && subsidiaryToggle && subsidiaryParent) {
+        const shouldRestoreOpen = sessionStorage.getItem(subsidiaryStorageKeys.keepOpenOnce) === '1';
+
         subsidiaryDropdown.classList.remove('show');
         subsidiaryParent.classList.remove('show');
         subsidiaryToggle.setAttribute('aria-expanded', 'false');
+
+        if (shouldRestoreOpen && typeof bootstrap !== 'undefined' && bootstrap.Dropdown) {
+            requestAnimationFrame(() => {
+                bootstrap.Dropdown.getOrCreateInstance(subsidiaryToggle).show();
+                sessionStorage.removeItem(subsidiaryStorageKeys.keepOpenOnce);
+            });
+        }
     }
 
     if (subsidiaryDropdown) {
@@ -255,7 +268,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Reset accordion state on panel switch; user opens desired group manually.
             collapsePanelAccordions(activePanel);
+
+            if (targetKey) {
+                sessionStorage.setItem(subsidiaryStorageKeys.activeTab, targetKey);
+            }
         };
+
+        const restoredTabKey = sessionStorage.getItem(subsidiaryStorageKeys.activeTab);
+        if (restoredTabKey) {
+            activateSubsidiaryPanel(restoredTabKey);
+        }
 
         // Keep mega dropdown open while user interacts with internal tab panel.
         subsidiaryDropdown.addEventListener('click', (event) => {
@@ -266,7 +288,22 @@ document.addEventListener('DOMContentLoaded', () => {
             tab.addEventListener('click', (event) => {
                 event.preventDefault();
                 event.stopPropagation();
-                activateSubsidiaryPanel(tab.dataset.subsidiaryTarget);
+
+                const targetKey = tab.dataset.subsidiaryTarget;
+                activateSubsidiaryPanel(targetKey);
+
+                const redirectUrl = tab.dataset.subsidiaryRedirect;
+                if (!redirectUrl) return;
+
+                const redirectTarget = tab.dataset.subsidiaryRedirectTarget || '_blank';
+
+                if (redirectTarget === '_self') {
+                    sessionStorage.setItem(subsidiaryStorageKeys.keepOpenOnce, '1');
+                    window.location.assign(redirectUrl);
+                    return;
+                }
+
+                window.open(redirectUrl, redirectTarget, 'noopener');
             });
         });
     }

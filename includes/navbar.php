@@ -72,184 +72,130 @@
                         Subsidiary Arm
                     </a>
                     <ul class="dropdown-menu mega-dropdown subsidiary-dropdown border-0 shadow-lg">
-                        <li class="subsidiary-layout">
-                            <div class="subsidiary-categories" role="tablist" aria-label="Subsidiary Categories">
-                                <button class="subsidiary-tab is-active" type="button" role="tab" aria-selected="true" data-subsidiary-target="victrovault-infotch">
-                                    Victrovault Infotch (Opc) Pvt Ltd
-                                </button>
-                                <button class="subsidiary-tab" type="button" role="tab" aria-selected="false" data-subsidiary-target="umbrella-e-services-megacenter">
-                                    Umbrella E-services Megacenter
-                                </button>
-                                <button class="subsidiary-tab" type="button" role="tab" aria-selected="false" data-subsidiary-target="viotx-umbrella-web3-llp">
-                                    Viotx Umbrella Web3 LLP
-                                </button>
-                                <button class="subsidiary-tab" type="button" role="tab" aria-selected="false" data-subsidiary-target="finserv-umbrella-web3-llp">
-                                    FinServ Umbrella
-                                </button>
-                                <button class="subsidiary-tab" type="button" role="tab" aria-selected="false" data-subsidiary-target="umbrella-news-admedia">
-                                    Umbrella News AdMedia
-                                </button>
-                            </div>
+                        <li class="sub-mega-wrapper">
+                            <div class="sub-mega-grid">
 
-                            <div class="subsidiary-content">
-                                <div class="subsidiary-panel is-active" role="tabpanel" data-subsidiary-panel="victrovault-infotch">
-                                    <p class="subsidiary-panel-title">Victrovault Infotch (Opc) Pvt Ltd</p>
-                                    <div class="accordion subsidiary-accordion" id="subsidiaryBusinessAccordionVictro">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="subBizVictroHeadingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#subBizVictroCollapseOne" aria-expanded="true" aria-controls="subBizVictroCollapseOne">
-                                                    Software and AI Develop
-                                                </button>
-                                            </h2>
-                                            <div id="subBizVictroCollapseOne" class="accordion-collapse collapse show" aria-labelledby="subBizVictroHeadingOne" data-bs-parent="#subsidiaryBusinessAccordionVictro">
-                                                <div class="accordion-body">
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/web-application-development-agency.php" target="_blank">Application Development</a>
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/application-maintenance-services.php" target="_blank">Application Maintenance</a>
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/application-maintenance-services.php" target="_blank">PC Security Software</a>
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/application-maintenance-services.php" target="_blank">Microsoft Soft Licences</a>
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/application-maintenance-services.php" target="_blank">Apple Support</a>
-                                                    <a class="subsidiary-link" href="https://npav.net/" target="_blank">NPAV Antivirus Sales</a>
-                                                    <a class="subsidiary-link" href="https://npav.net/editions/" target="_blank">NPAV Antivirus Editions Comparision</a>
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/video-production-services-company-1.php" target="_blank">Antivirus Sales </a>
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/corporate-photoshoot-services.php" target="_blank">ZOHO Setup</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <!-- Column 1: Victrovault Infotch -->
+                                <div class="sub-mega-col">
+                                    <a class="sub-mega-heading" href="http://it.umbrellax.co.in/" target="_blank">Victrovault Infotch</a>
+                                    <div class="sub-mega-divider"></div>
 
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="subBizVictroHeadingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subBizVictroCollapseTwo" aria-expanded="false" aria-controls="subBizVictroCollapseTwo">
-                                                    Security Testing
-                                                </button>
-                                            </h2>
-                                            <div id="subBizVictroCollapseTwo" class="accordion-collapse collapse" aria-labelledby="subBizVictroHeadingTwo" data-bs-parent="#subsidiaryBusinessAccordionVictro">
-                                                <div class="accordion-body">
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/about.php" target="_blank">Web App VAPT</a>
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/carrers.php" target="_blank">Data Protection and Compliance</a>
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/contact.php" target="_blank">Vulnerability Assessments & Penetration Testing</a>
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/application-maintenance-services.php" target="_blank">Application Maintenance</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <span class="sub-mega-cat">Software &amp; AI Development</span>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/web-application-development-agency.php" target="_blank">Application Development</a>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/application-maintenance-services.php" target="_blank">Application Maintenance</a>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/application-maintenance-services.php" target="_blank">PC Security Software</a>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/application-maintenance-services.php" target="_blank">Microsoft Soft Licences</a>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/application-maintenance-services.php" target="_blank">Apple Support</a>
+                                    <a class="sub-mega-link" href="https://npav.net/" target="_blank">NPAV Antivirus Sales</a>
+                                    <a class="sub-mega-link" href="https://npav.net/editions/" target="_blank">NPAV Antivirus Editions</a>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/corporate-photoshoot-services.php" target="_blank">ZOHO Setup</a>
 
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="subBizVictroHeadingThree">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subBizVictroCollapseThree" aria-expanded="false" aria-controls="subBizVictroCollapseThree">
-                                                    Work Portfolio
-                                                </button>
-                                            </h2>
-                                            <div id="subBizVictroCollapseThree" class="accordion-collapse collapse" aria-labelledby="subBizVictroHeadingThree" data-bs-parent="#subsidiaryBusinessAccordionVictro">
-                                                <div class="accordion-body">
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/web-application-development-agency.php" target="_blank">Website Portfolio Samples</a>
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/application-maintenance-services.php"  target="_blank">Digital Marketing</a>
-                                                    <a class="subsidiary-link" href="https://it.incorp-umbrellagroup.com/website-costing.php"  target="_blank">Pricing</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <span class="sub-mega-cat">Security Testing</span>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/about.php" target="_blank">Web App VAPT</a>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/carrers.php" target="_blank">Data Protection &amp; Compliance</a>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/contact.php" target="_blank">Vulnerability Assessments &amp; VAPT</a>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/application-maintenance-services.php" target="_blank">Application Maintenance</a>
+
+                                    <span class="sub-mega-cat">Work Portfolio</span>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/web-application-development-agency.php" target="_blank">Website Portfolio Samples</a>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/application-maintenance-services.php" target="_blank">Digital Marketing</a>
+                                    <a class="sub-mega-link" href="http://it.umbrellax.co.in/website-costing.php" target="_blank">Pricing</a>
                                 </div>
 
-                                <div class="subsidiary-panel" role="tabpanel" data-subsidiary-panel="umbrella-e-services-megacenter">
-                                    <p class="subsidiary-panel-title">Umbrella E-services Megacenter</p>
-                                    <div class="accordion subsidiary-accordion" id="subsidiaryBusinessAccordionEServices">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="subBizEServicesHeadingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#subBizEServicesCollapseOne" aria-expanded="true" aria-controls="subBizEServicesCollapseOne">
-                                                    Gov Identity Portal
-                                                </button>
-                                            </h2>
-                                            <div id="subBizEServicesCollapseOne" class="accordion-collapse collapse show" aria-labelledby="subBizEServicesHeadingOne" data-bs-parent="#subsidiaryBusinessAccordionEServices">
-                                                <div class="accordion-body">
-                                                    <p class="subsidiary-link-title">Gov Identity and Address Proof</p>
-                                                    <a class="subsidiary-link" href="https://digilocker.meripehchaan.gov.in/signup" target="_blank">MeriPehchaan User Ac SignUp</a>
-                                                    <a class="subsidiary-link" href="https://uidai.gov.in/en/" target="_blank">UID | Aadhar Portal</a>
-                                                    <a class="subsidiary-link" href="https://bhuvan-app3.nrsc.gov.in/aadhaar/" target="_blank">Search Aadhar Authorized Centre</a>
-                                                    <a class="subsidiary-link" href="https://www.digilocker.gov.in/" target="_blank">Digilocker </a>
-                                                    <a class="subsidiary-link" href="https://voters.eci.gov.in/" target="_blank">Voter Id| Election Card </a>
-                                                    <a class="subsidiary-link" href="https://rcms.mahafood.gov.in/" target="_blank">Maharashtra Ration Card </a>
-                                                    <a class="subsidiary-link" href="https://web.umang.gov.in/landing" target="_blank">Umang </a>
-                                                    <a class="subsidiary-link" href="https://healthid.ndhm.gov.in/" target="_blank">Abha | Health Id</a>
-                                                    <a class="subsidiary-link" href="https://www.abc.gov.in/" target="_blank">Apaar Card |Academic Bank Of Credits</a>
-                                                    <a class="subsidiary-link" href="https://digilocker.meripehchaan.gov.in/signup/" target="_blank">Passport </a>
+                                <!-- Column 2: Umbrella E-Services — Identity -->
+                                <div class="sub-mega-col">
+                                    <a class="sub-mega-heading" href="https://digitalseva.csc.gov.in/" target="_blank">Umbrella E-Services</a>
+                                    <div class="sub-mega-divider"></div>
 
-                                                    
-                                                    <p class="subsidiary-link-title">Verify Documents & Licences</p>
-                                                    <a class="subsidiary-link" href="https://myaadhaar.uidai.gov.in/verifyAadhaar" target="_blank">Verify Aadhar No</a>
-                                                    <a class="subsidiary-link" href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/verifyYourPAN" target="_blank">Verify PAN No </a>
-                                                    <a class="subsidiary-link" href="https://bhulekh.mahabhumi.gov.in/" target="_blank">Mahabhumilekh</a>
-                                                    <a class="subsidiary-link" href="https://www.myscheme.gov.in/" target="_blank">Find MyScheme</a>
-                                                    <a class="subsidiary-link" href="https://nsmny.mahait.org/" target="_blank">Namo Shetkari Yojna</a>
-                                                    <a class="subsidiary-link" href="https://fw.pmkisan.gov.in/" target="_blank">PM-Kisan Sanman Nidhi </a>
-                                                    <a class="subsidiary-link" href="https://www.swavlambancard.gov.in/" target="_blank">Swavlamban Disability Card (दिव्यांग युडीआयडी)</a>
-                                                    <a class="subsidiary-link" href="https://bartievalidity.maharashtra.gov.in/" target="_blank">Maha Validity Certificate</a>
-                                                    <a class="subsidiary-link" href="https://www.mahadiscom.in/en/home/" target="_blank">Mahavitaran</a>
-                                                    <a class="subsidiary-link" href="https://maandhan.in/" target="_blank">Maandhan</a>
-                                                    <a class="subsidiary-link" href="https://jeevanpramaan.gov.in/" target="_blank">Jeevan Pramaan</a>
-                                                    <a class="subsidiary-link" href="https://rojgar.mahaswayam.gov.in/" target="_blank">Rojgar Mahaswayam</a>
-                                                    <a class="subsidiary-link" href="https://www.ncs.gov.in/" target="_blank">National Career Service|Jobs</a>
+                                    <span class="sub-mega-cat">Gov Identity Portal</span>
+                                    <a class="sub-mega-link" href="https://digilocker.meripehchaan.gov.in/signup" target="_blank">MeriPehchaan User Ac SignUp</a>
+                                    <a class="sub-mega-link" href="https://uidai.gov.in/en/" target="_blank">UID | Aadhar Portal</a>
+                                    <a class="sub-mega-link" href="https://bhuvan-app3.nrsc.gov.in/aadhaar/" target="_blank">Search Aadhar Authorized Centre</a>
+                                    <a class="sub-mega-link" href="https://www.digilocker.gov.in/" target="_blank">Digilocker</a>
+                                    <a class="sub-mega-link" href="https://voters.eci.gov.in/" target="_blank">Voter Id | Election Card</a>
+                                    <a class="sub-mega-link" href="https://rcms.mahafood.gov.in/" target="_blank">Maharashtra Ration Card</a>
+                                    <a class="sub-mega-link" href="https://web.umang.gov.in/landing" target="_blank">Umang</a>
+                                    <a class="sub-mega-link" href="https://healthid.ndhm.gov.in/" target="_blank">Abha | Health Id</a>
+                                    <a class="sub-mega-link" href="https://www.abc.gov.in/" target="_blank">Apaar Card | Academic Bank Of Credits</a>
+                                    <a class="sub-mega-link" href="https://digilocker.meripehchaan.gov.in/signup/" target="_blank">Passport</a>
 
-                                                    
-                                                    <p class="subsidiary-link-title">Documents</p>
-                                                    <a class="subsidiary-link" href="https://www.mahaonline.gov.in/" target="_blank">Mahaonline Application Status </a>
-                                                    <a class="subsidiary-link" href="https://bartievalidity.maharashtra.gov.in/caste_validity.php" target="_blank">Central Caste Validity Certificate</a>
-                                                    <a class="subsidiary-link" href="https://castevalidity.mahaonline.gov.in/VerifyCertNo/VerifyCertNo" target="_blank">District MH Caste Validity Certificate</a>
-                                                    <a class="subsidiary-link" href="https://revenue.mahaonline.gov.in/Verify/" target="_blank">Revenue</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <span class="sub-mega-cat">Verify Documents &amp; Licences</span>
+                                    <a class="sub-mega-link" href="https://myaadhaar.uidai.gov.in/verifyAadhaar" target="_blank">Verify Aadhar No</a>
+                                    <a class="sub-mega-link" href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/verifyYourPAN" target="_blank">Verify PAN No</a>
+                                    <a class="sub-mega-link" href="https://bhulekh.mahabhumi.gov.in/" target="_blank">Mahabhumilekh</a>
+                                    <a class="sub-mega-link" href="https://www.myscheme.gov.in/" target="_blank">Find MyScheme</a>
+                                    <a class="sub-mega-link" href="https://nsmny.mahait.org/" target="_blank">Namo Shetkari Yojna</a>
+                                    <a class="sub-mega-link" href="https://fw.pmkisan.gov.in/" target="_blank">PM-Kisan Sanman Nidhi</a>
+                                    <a class="sub-mega-link" href="https://www.swavlambancard.gov.in/" target="_blank">Swavlamban Disability Card</a>
+                                    <a class="sub-mega-link" href="https://bartievalidity.maharashtra.gov.in/" target="_blank">Maha Validity Certificate</a>
+                                    <a class="sub-mega-link" href="https://www.mahadiscom.in/en/home/" target="_blank">Mahavitaran</a>
+                                    <a class="sub-mega-link" href="https://maandhan.in/" target="_blank">Maandhan</a>
+                                    <a class="sub-mega-link" href="https://jeevanpramaan.gov.in/" target="_blank">Jeevan Pramaan</a>
+                                    <a class="sub-mega-link" href="https://rojgar.mahaswayam.gov.in/" target="_blank">Rojgar Mahaswayam</a>
+                                    <a class="sub-mega-link" href="https://www.ncs.gov.in/" target="_blank">National Career Service | Jobs</a>
 
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="subBizEServicesHeadingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subBizEServicesCollapseTwo" aria-expanded="false" aria-controls="subBizEServicesCollapseTwo">
-                                                    Gov Health Care Portal
-                                                </button>
-                                            </h2>
-                                            <div id="subBizEServicesCollapseTwo" class="accordion-collapse collapse" aria-labelledby="subBizEServicesHeadingTwo" data-bs-parent="#subsidiaryBusinessAccordionEServices">
-                                                <div class="accordion-body">
-                                                    <p class="subsidiary-link-title">National Health ABHA</p>
-                                                    <a class="subsidiary-link" href="httphttps://abdm.gov.in/" target="_blank">Sign Up ABHA ID</a>
-                                                    <a class="subsidiary-link" href="https://beneficiary.nha.gov.in/" target="_blank">Ayushmaan Beneficiary </a>
-                                                    <a class="subsidiary-link" href="https://bis.pmjay.gov.in/BIS/mobileverify" target="_blank">PMJAY Ayushmaan Beneficiary </a>
-                                                    <a class="subsidiary-link" href="https://nhpr.abdm.gov.in/" target="_blank">Doctor Health Care Professionals</a>
-                                                    <a class="subsidiary-link" href="https://nhpr.abdm.gov.in/" target="_blank">Health Care Professionals</a>
-                                                    <a class="subsidiary-link" href="https://nhpr.abdm.gov.in/" target="_blank">Health Facility Registry</a>
-                                                    <a class="subsidiary-link" href="https://facility.ndhm.gov.in/" target="_blank">Ayushman CAPF ID</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="subBizEServicesHeadingThree">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subBizEServicesCollapseThree" aria-expanded="false" aria-controls="subBizEServicesCollapseThree">
-                                                    Revenue Department
-                                                </button>
-                                            </h2>
-                                            <div id="subBizEServicesCollapseThree" class="accordion-collapse collapse" aria-labelledby="subBizEServicesHeadingThree" data-bs-parent="#subsidiaryBusinessAccordionEServices">
-                                                <div class="accordion-body">
-                                                    <p class="subsidiary-link-title">Revenue Department</p>
-                                                    <a class="subsidiary-link" href="https://digitalseva.csc.gov.in/" target="_blank">CSC Login </a>
-                                                    <a class="subsidiary-link" href="https://digitalsatbara.mahabhumi.gov.in/dslr"  target="_blank">Digital 7/12 (8A)(E-Ferfar) </a>
-                                                    <a class="subsidiary-link" href="https://bhulekh.mahabhumi.gov.in/"  target="_blank">Mahabhumilekh</a>
-                                                    <a class="subsidiary-link" href="https://www.myscheme.gov.in/" target="_blank">Find MyScheme</a>
-                                                    <a class="subsidiary-link" href="https://nsmny.mahait.org/" target="_blank">Namo Shetkari Yojna</a>
-                                                    <a class="subsidiary-link" href="https://fw.pmkisan.gov.in/"  target="_blank">PM-Kisan Sanman Nidhi </a>
-                                                    <a class="subsidiary-link" href="https://www.swavlambancard.gov.in/"  target="_blank">Swavlamban Disability Card (दिव्यांग युडीआयडी)</a>
-                                                    <a class="subsidiary-link" href="https://bartievalidity.maharashtra.gov.in/"  target="_blank">Maha Validity Certificate</a>
-
-                                                    <p class="subsidiary-link-title">Verify Revenue Documents Online</p>
-                                                    <a class="subsidiary-link" href="https://www.mahaonline.gov.in/" target="_blank">Mahaonline Application Status </a>
-                                                    <a class="subsidiary-link" href="https://bartievalidity.maharashtra.gov.in/caste_validity.php"  target="_blank">Central Caste Validity Certificate</a>
-                                                    <a class="subsidiary-link" href="https://castevalidity.mahaonline.gov.in/VerifyCertNo/VerifyCertNo"  target="_blank">District MH Caste Validity Certificate</a>
-                                                    <a class="subsidiary-link" href="https://revenue.mahaonline.gov.in/Verify/" target="_blank">Revenue</a>
-                                                    <a class="subsidiary-link" href="https://abdm.gov.in/" target="_blank">Sign Up ABHA ID</a>
-                                                    <a class="subsidiary-link" href="https://beneficiary.nha.gov.in/"  target="_blank">Ayushmaan Beneficiary </a>
-                                                    <a class="subsidiary-link" href="https://bis.pmjay.gov.in/BIS/mobileverify"  target="_blank">PMJAY Ayushmaan Beneficiary </a>
-                                                    <a class="subsidiary-link" href="https://mahaulb.in/MahaULB/index"  target="_blank">Maharashtra IT Citizen Portals Tax/</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <span class="sub-mega-cat">Documents</span>
+                                    <a class="sub-mega-link" href="https://www.mahaonline.gov.in/" target="_blank">Mahaonline Application Status</a>
+                                    <a class="sub-mega-link" href="https://bartievalidity.maharashtra.gov.in/caste_validity.php" target="_blank">Central Caste Validity Certificate</a>
+                                    <a class="sub-mega-link" href="https://castevalidity.mahaonline.gov.in/VerifyCertNo/VerifyCertNo" target="_blank">District MH Caste Validity Certificate</a>
+                                    <a class="sub-mega-link" href="https://revenue.mahaonline.gov.in/Verify/" target="_blank">Revenue</a>
                                 </div>
+
+                                <!-- Column 3: E-Services — Health & Revenue -->
+                                <div class="sub-mega-col">
+                                    <span class="sub-mega-heading sub-mega-heading--plain">&nbsp;</span>
+                                    <div class="sub-mega-divider sub-mega-divider--invisible"></div>
+
+                                    <span class="sub-mega-cat">Gov Health Care Portal</span>
+                                    <a class="sub-mega-link" href="https://abdm.gov.in/" target="_blank">Sign Up ABHA ID</a>
+                                    <a class="sub-mega-link" href="https://beneficiary.nha.gov.in/" target="_blank">Ayushmaan Beneficiary</a>
+                                    <a class="sub-mega-link" href="https://bis.pmjay.gov.in/BIS/mobileverify" target="_blank">PMJAY Ayushmaan Beneficiary</a>
+                                    <a class="sub-mega-link" href="https://nhpr.abdm.gov.in/" target="_blank">Doctor Health Care Professionals</a>
+                                    <a class="sub-mega-link" href="https://nhpr.abdm.gov.in/" target="_blank">Health Care Professionals</a>
+                                    <a class="sub-mega-link" href="https://nhpr.abdm.gov.in/" target="_blank">Health Facility Registry</a>
+                                    <a class="sub-mega-link" href="https://facility.ndhm.gov.in/" target="_blank">Ayushman CAPF ID</a>
+
+                                    <span class="sub-mega-cat">Revenue Department</span>
+                                    <a class="sub-mega-link" href="https://digitalseva.csc.gov.in/" target="_blank">CSC Login</a>
+                                    <a class="sub-mega-link" href="https://digitalsatbara.mahabhumi.gov.in/dslr" target="_blank">Digital 7/12 (8A)(E-Ferfar)</a>
+                                    <a class="sub-mega-link" href="https://bhulekh.mahabhumi.gov.in/" target="_blank">Mahabhumilekh</a>
+                                    <a class="sub-mega-link" href="https://www.myscheme.gov.in/" target="_blank">Find MyScheme</a>
+                                    <a class="sub-mega-link" href="https://nsmny.mahait.org/" target="_blank">Namo Shetkari Yojna</a>
+                                    <a class="sub-mega-link" href="https://fw.pmkisan.gov.in/" target="_blank">PM-Kisan Sanman Nidhi</a>
+                                    <a class="sub-mega-link" href="https://www.swavlambancard.gov.in/" target="_blank">Swavlamban Disability Card (दिव्यांग युडीआयडी)</a>
+                                    <a class="sub-mega-link" href="https://bartievalidity.maharashtra.gov.in/" target="_blank">Maha Validity Certificate</a>
+                                    <a class="sub-mega-link" href="https://www.mahaonline.gov.in/" target="_blank">Mahaonline Application Status</a>
+                                    <a class="sub-mega-link" href="https://bartievalidity.maharashtra.gov.in/caste_validity.php" target="_blank">Central Caste Validity Certificate</a>
+                                    <a class="sub-mega-link" href="https://castevalidity.mahaonline.gov.in/VerifyCertNo/VerifyCertNo" target="_blank">District MH Caste Validity Certificate</a>
+                                    <a class="sub-mega-link" href="https://revenue.mahaonline.gov.in/Verify/" target="_blank">Revenue Verification</a>
+                                    <a class="sub-mega-link" href="https://mahaulb.in/MahaULB/index" target="_blank">Maharashtra IT Citizen Portals</a>
+                                </div>
+
+                                <!-- Column 4: Viotx Web3 + FinServ + News -->
+                                <div class="sub-mega-col">
+                                    <span class="sub-mega-heading sub-mega-heading--plain">Other Subsidiaries</span>
+                                    <div class="sub-mega-divider"></div>
+
+                                    <span class="sub-mega-cat">Viotx Umbrella Web3 LLP</span>
+                                    <a class="sub-mega-link" href="#" target="_blank">Blockchain Solutions</a>
+                                    <a class="sub-mega-link" href="#" target="_blank">Web3 Development</a>
+                                    <a class="sub-mega-link" href="#" target="_blank">Smart Contracts</a>
+                                    <a class="sub-mega-link" href="#" target="_blank">NFT Development</a>
+                                    <a class="sub-mega-link" href="#" target="_blank">DeFi Solutions</a>
+
+                                    <span class="sub-mega-cat">FinServ Umbrella</span>
+                                    <a class="sub-mega-link" href="#" target="_blank">Financial Services</a>
+                                    <a class="sub-mega-link" href="#" target="_blank">Investment Planning</a>
+                                    <a class="sub-mega-link" href="#" target="_blank">Insurance Advisory</a>
+                                    <a class="sub-mega-link" href="#" target="_blank">Wealth Management</a>
+
+                                    <span class="sub-mega-cat">Umbrella News AdMedia</span>
+                                    <a class="sub-mega-link" href="#" target="_blank">News Coverage</a>
+                                    <a class="sub-mega-link" href="#" target="_blank">Ad Media Solutions</a>
+                                    <a class="sub-mega-link" href="#" target="_blank">Digital Advertising</a>
+                                    <a class="sub-mega-link" href="#" target="_blank">Press &amp; PR</a>
+                                </div>
+
                             </div>
                         </li>
                     </ul>

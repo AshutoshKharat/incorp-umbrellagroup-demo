@@ -186,6 +186,35 @@
     filter: invert(0.92) hue-rotate(180deg) saturate(0.7);
 }
 
+[data-theme="dark"] .sub-mega-wrapper {
+    background: #1b2232;
+}
+
+[data-theme="dark"] .sub-mega-col {
+    border-right-color: rgba(148, 163, 184, 0.15);
+}
+
+[data-theme="dark"] .sub-mega-heading {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .sub-mega-heading:hover {
+    color: #93c5fd;
+}
+
+[data-theme="dark"] .sub-mega-cat {
+    color: #93c5fd;
+}
+
+[data-theme="dark"] .sub-mega-link {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .sub-mega-link:hover,
+[data-theme="dark"] .sub-mega-link:focus-visible {
+    color: #bfdbfe;
+}
+
 @media (max-width: 991.98px) {
     [data-theme="dark"] .subsidiary-categories {
         border-bottom-color: rgba(148, 163, 184, 0.2);
@@ -266,7 +295,11 @@ body,
 .footer-section-title,
 .faq-question,
 .faq-answer p,
-.footer-bottom p {
+.footer-bottom p,
+.sub-mega-wrapper,
+.sub-mega-heading,
+.sub-mega-cat,
+.sub-mega-link {
     transition: background-color 0.35s ease,
                 border-color 0.35s ease,
                 color 0.35s ease,
